@@ -5,6 +5,13 @@ import express from "express"
 const app = express()
 import connectDB from "./database/connectDB.js"
 
+// Routers
+import authRouter from "./routes/authRoutes.js"
+
+app.use(express.json())
+
+app.use("/api/v1/auth", authRouter)
+
 app.get("/", (req, res) => {
   res.send("<h1> Indago-job-tracking-website API </h2>")
 })
