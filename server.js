@@ -7,6 +7,9 @@ import connectDB from "./database/connectDB.js"
 
 // Routers
 import authRouter from "./routes/authRoutes.js"
+// Middleware
+import errorHandlerMiddleware from './middleware/error-handler.js'
+import notFoundMiddleware from './middleware/not-found.js'
 
 app.use(express.json())
 
@@ -15,6 +18,9 @@ app.use("/api/v1/auth", authRouter)
 app.get("/", (req, res) => {
   res.send("<h1> Indago-job-tracking-website API </h2>")
 })
+
+app.use(notFoundMiddleware)
+app.use(errorHandlerMiddleware)
 
 // Create a server
 const port = 5000 || process.env.PORT
