@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "This is the API for the Indago website, a job tracking website.",
   "main": "server.js",
+  "type": "module",
   "scripts": {
     "start": "nodemon server.js"
   },
@@ -16,7 +17,8 @@
     "express-fileupload": "^1.4.0",
     "http-status-codes": "^2.2.0",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^6.7.0"
+    "mongoose": "^6.7.0",
+    "validator": "^13.7.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.20"
