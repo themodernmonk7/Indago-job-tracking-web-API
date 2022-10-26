@@ -1,23 +1,29 @@
 import { StatusCodes } from "http-status-codes"
 
 const errorHandlerMiddleware = (err, req, res, next) => {
-  const defaultError = {
+  let customError = {
+    // set default
     statusCode: err.statusCode || StatusCodes.INTERNAL_SERVER_ERROR,
-    msg: err.message || "Something went wrong, try again later",
+    msg: err.message || "Something went wrong try again later",
   }
   if (err.name === "ValidationError") {
-    defaultError.statusCode = StatusCodes.BAD_REQUEST
-    // defaultError.msg = err.message
-    defaultError.msg = Object.values(err.errors)
+    customError.msg = Object.values(err.errors)
       .map((item) => item.message)
       .join(",")
+    customError.statusCode = 400
   }
   if (err.code && err.code === 11000) {
-    defaultError.statusCode = StatusCodes.BAD_REQUEST
-    defaultError.msg = `${Object.keys(err.keyValue)} field has to be unique`
+    customError.msg = `Duplicate value entered for ${Object.keys(
+      err.keyValue
+    )} field, please choose another value`
+    customError.statusCode = 400
+  }
+  if (err.name === "CastError") {
+    customError.msg = `No item found with id : ${err.value}`
+    customError.statusCode = 404
   }
 
-  res.status(defaultError.statusCode).json({ msg: defaultError.msg })
+  return res.status(customError.statusCode).json({ msg: customError.msg })
 }
 
 export default errorHandlerMiddleware
