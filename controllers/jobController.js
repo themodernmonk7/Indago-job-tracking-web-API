@@ -1,16 +1,21 @@
+import Job from "../models/jobModel.js"
+import { StatusCodes } from "http-status-codes"
+
+// * === === === === ===    CREATE JOB      === === === === === *
+const createJob = async (req, res) => {
+  req.body.createdBy = req.user.userId
+  const job = await Job.create(req.body)
+  res.status(StatusCodes.CREATED).json({ job })
+}
+
 // * === === === === ===    GET ALL JOBS    === === === === === *
 const getAllJobs = async (req, res) => {
-  res.send("Get all jobs")
+  res.send("Create job")
 }
 
 // * === === === === ===    GET SINGLE JOB  === === === === === *
 const getSingleJob = async (req, res) => {
   res.send(" single Job")
-}
-
-// * === === === === ===    CREATE JOB      === === === === === *
-const createJob = async (req, res) => {
-  res.send("Create job")
 }
 
 // * === === === === ===    UPDATE JOB      === === === === === *
