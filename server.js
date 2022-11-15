@@ -7,13 +7,15 @@ import connectDB from "./database/connectDB.js"
 
 // Routers
 import authRouter from "./routes/authRoutes.js"
+import jobRouter from "./routes/jobRoutes.js"
 // Middleware
-import errorHandlerMiddleware from './middleware/error-handler.js'
-import notFoundMiddleware from './middleware/not-found.js'
+import errorHandlerMiddleware from "./middleware/error-handler.js"
+import notFoundMiddleware from "./middleware/not-found.js"
 
 app.use(express.json())
 
 app.use("/api/v1/auth", authRouter)
+app.use("/api/v1/jobs", jobRouter)
 
 app.get("/", (req, res) => {
   res.send("<h1> Indago-job-tracking-website API </h2>")
