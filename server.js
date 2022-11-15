@@ -4,7 +4,7 @@ import "express-async-errors"
 import express from "express"
 const app = express()
 import connectDB from "./database/connectDB.js"
-
+import authenticateUser from "./middleware/authentication.js"
 // Routers
 import authRouter from "./routes/authRoutes.js"
 import jobRouter from "./routes/jobRoutes.js"
@@ -15,7 +15,7 @@ import notFoundMiddleware from "./middleware/not-found.js"
 app.use(express.json())
 
 app.use("/api/v1/auth", authRouter)
-app.use("/api/v1/jobs", jobRouter)
+app.use("/api/v1/jobs", authenticateUser, jobRouter)
 
 app.get("/", (req, res) => {
   res.send("<h1> Indago-job-tracking-website API </h2>")
