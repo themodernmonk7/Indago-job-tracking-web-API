@@ -55,11 +55,8 @@ const login = async (req, res) => {
 }
 // * === === === === === UPDATE USER === === === === === *
 const updateUser = async (req, res) => {
-  // console.log(req.user)
-  // res.json(req.user)
-  // console.log(req.body)
-  const { name, lastName, email, location, bio, images } = req.body
-  if (!name || !lastName || !email || !location) {
+  const { email, name, lastName, location } = req.body
+  if (!email || !name || !lastName || !location) {
     throw new BadRequestError("Please provide all values")
   }
   const user = await User.findOne({ _id: req.user.userId })
@@ -68,14 +65,17 @@ const updateUser = async (req, res) => {
   user.name = name
   user.lastName = lastName
   user.location = location
-  user.bio = bio
 
   await user.save()
   const token = user.createJWT()
   res.status(StatusCodes.OK).json({
-    user,
-    token,
-    location: user.location,
+    user: {
+      email: user.email,
+      lastName: user.lastName,
+      location: user.location,
+      name: user.name,
+      token,
+    },
   })
 }
 
