@@ -30,32 +30,32 @@ const getSingleJob = async (req, res) => {
 
 // * === === === === ===    UPDATE JOB      === === === === === *
 const updateJob = async (req, res) => {
-    const {
-      user: { userId },
-      params: { id: jobId },
-    } = req
-    const job = await Job.findOneAndUpdate(
-      { _id: jobId, createdBy: userId },
-      req.body,
-      { new: true, runValidators: true }
-    )
-    if (!job) {
-      throw new NotFoundError(`No job found with id ${jobId}`)
-    }
-    res.status(StatusCodes.OK).json({ job })
+  const {
+    user: { userId },
+    params: { id: jobId },
+  } = req
+  const job = await Job.findByIdAndUpdate(
+    { _id: jobId, createdBy: userId },
+    req.body,
+    { new: true, runValidators: true }
+  )
+  if (!job) {
+    throw new NotFoundError(`No job found with id ${jobId}`)
+  }
+  res.status(StatusCodes.OK).json({ job })
 }
 
 // * === === === === ===    DELETE JOB      === === === === === *
 const deleteJob = async (req, res) => {
-    const {
-      user: { userId },
-      params: { id: jobId },
-    } = req
-    const job = await Job.findOneAndDelete({ _id: jobId, createdBy: userId })
-    if (!job) {
-      throw new NotFoundError(`No job found with this id ${jobId}`)
-    }
-    res.status(StatusCodes.OK).json({ msg: "Job deleted successfully!" })
+  const {
+    user: { userId },
+    params: { id: jobId },
+  } = req
+  const job = await Job.findByIdAndRemove({ _id: jobId, createdBy: userId })
+  if (!job) {
+    throw new NotFoundError(`No job found with this id ${jobId}`)
+  }
+  res.status(StatusCodes.OK).send()
 }
 
 // * === === === === ===    SHOW STATS      === === === === === *
