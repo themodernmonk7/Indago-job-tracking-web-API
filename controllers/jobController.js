@@ -30,7 +30,19 @@ const getSingleJob = async (req, res) => {
 
 // * === === === === ===    UPDATE JOB      === === === === === *
 const updateJob = async (req, res) => {
-  res.send("Update job")
+    const {
+      user: { userId },
+      params: { id: jobId },
+    } = req
+    const job = await Job.findOneAndUpdate(
+      { _id: jobId, createdBy: userId },
+      req.body,
+      { new: true, runValidators: true }
+    )
+    if (!job) {
+      throw new NotFoundError(`No job found with id ${jobId}`)
+    }
+    res.status(StatusCodes.OK).json({ job })
 }
 
 // * === === === === ===    DELETE JOB      === === === === === *
