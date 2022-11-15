@@ -1,6 +1,6 @@
 import Job from "../models/jobModel.js"
 import { StatusCodes } from "http-status-codes"
-import { NotFoundError } from "../errors/index.js"
+import { BadRequestError, NotFoundError } from "../errors/index.js"
 
 // * === === === === ===    CREATE JOB      === === === === === *
 const createJob = async (req, res) => {
@@ -34,6 +34,10 @@ const updateJob = async (req, res) => {
     user: { userId },
     params: { id: jobId },
   } = req
+  const { company, position } = req.body
+  if (company === "" || position === "") {
+    throw new BadRequestError("Company or Position fields cannot be empty.")
+  }
   const job = await Job.findByIdAndUpdate(
     { _id: jobId, createdBy: userId },
     req.body,
