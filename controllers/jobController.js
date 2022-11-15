@@ -1,5 +1,6 @@
 import Job from "../models/jobModel.js"
 import { StatusCodes } from "http-status-codes"
+import { NotFoundError } from "../errors/index.js"
 
 // * === === === === ===    CREATE JOB      === === === === === *
 const createJob = async (req, res) => {
@@ -10,13 +11,21 @@ const createJob = async (req, res) => {
 
 // * === === === === ===    GET ALL JOBS    === === === === === *
 const getAllJobs = async (req, res) => {
-    const job = await Job.find({ createdBy: req.user.userId })
-    res.status(StatusCodes.OK).json({ job, total_jobs: job.length })
+  const job = await Job.find({ createdBy: req.user.userId })
+  res.status(StatusCodes.OK).json({ job, total_jobs: job.length })
 }
 
 // * === === === === ===    GET SINGLE JOB  === === === === === *
 const getSingleJob = async (req, res) => {
-  res.send(" single Job")
+  const {
+    user: { userId },
+    params: { id: jobId },
+  } = req
+  const job = await Job.findOne({ _id: jobId, createdBy: userId })
+  if (!job) {
+    throw new NotFoundError(`No job found with id ${jobId}`)
+  }
+  res.status(StatusCodes.OK).json({ job })
 }
 
 // * === === === === ===    UPDATE JOB      === === === === === *
