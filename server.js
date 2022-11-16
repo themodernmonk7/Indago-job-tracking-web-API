@@ -12,6 +12,7 @@ import jobRouter from "./routes/jobRoutes.js"
 import errorHandlerMiddleware from "./middleware/error-handler.js"
 import notFoundMiddleware from "./middleware/not-found.js"
 
+app.set("trust proxy", 1)
 app.use(express.json())
 
 app.use("/api/v1/auth", authRouter)
