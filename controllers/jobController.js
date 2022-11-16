@@ -1,6 +1,8 @@
 import Job from "../models/jobModel.js"
 import { StatusCodes } from "http-status-codes"
 import { BadRequestError, NotFoundError } from "../errors/index.js"
+import moment from "moment"
+import mongoose from "mongoose"
 
 // * === === === === ===    CREATE JOB      === === === === === *
 const createJob = async (req, res) => {
@@ -97,25 +99,19 @@ const deleteJob = async (req, res) => {
 
 // * === === === === ===    SHOW STATS      === === === === === *
 const showStats = async (req, res) => {
-  res.send("Show stats")
+  let stats = await Job.aggregate([
+    { $match: { createdBy: mongoose.Types.ObjectId(req.user.userId) } }, // getting userId as string, thats why ObjectId
+    { $group: { _id: "$status", count: { $sum: 1 } } },
+  ])
+
+  stats = stats.reduce((acc, curr) => {
+    const { _id: title, count } = curr
+    acc[title] = count
+    return acc
+  }, {})
+
+  console.log(stats)
+  res.status(StatusCodes.OK).json({ defaultStats: {}, monthlyApplications: [] })
 }
 
 export { getAllJobs, getSingleJob, createJob, updateJob, deleteJob, showStats }
-
-// const { search, status, jobType, sort } = req.query
-// const queryObject = { createdBy: req.user.userId }
-
-// if (search) {
-//   queryObject.position = { $regex: search, $position: "i" }
-// }
-
-// if (status && status !== "all") {
-//   queryObject.status = status
-// }
-// if (jobType && jobType !== "all") {
-//   queryObject.jobType = jobType
-// }
-
-// let result = Job.find(queryObject)
-
-// const jobs = await result
