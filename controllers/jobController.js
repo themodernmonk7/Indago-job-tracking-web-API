@@ -11,8 +11,29 @@ const createJob = async (req, res) => {
 
 // * === === === === ===    GET ALL JOBS    === === === === === *
 const getAllJobs = async (req, res) => {
-  const job = await Job.find({ createdBy: req.user.userId })
-  res.status(StatusCodes.OK).json({ job, total_jobs: job.length })
+  const {search, status, jobType, sort} = req.query
+  const queryObject = { createdBy: req.user.userId }
+
+  if(search) {
+    queryObject.position = {$regex: search, $options: 'i'}
+  }
+  
+  if(status && status !== 'all') {
+    queryObject.status = status
+  }
+
+  if(jobType && jobType !== 'all') {
+    queryObject.jobType = jobType
+  }
+  let result = Job.find(queryObject)
+  // chaining sort
+  // const jobs = await Job.find({createdBy: req.user.userId}).sort('-createdAt') //latest
+  if(sort === 'latest') result = result.sort('-createdAt')
+  if(sort === 'oldest') result = result.sort('createdAt')
+  if(sort === 'a-z') result = result.sort('position')
+  if(sort === 'z-a') result = result.sort('-position')
+  const jobs = await result
+    res.status(StatusCodes.OK).json({ total_jobs: jobs.length, jobs })
 }
 
 // * === === === === ===    GET SINGLE JOB  === === === === === *
@@ -68,3 +89,21 @@ const showStats = async (req, res) => {
 }
 
 export { getAllJobs, getSingleJob, createJob, updateJob, deleteJob, showStats }
+
+// const { search, status, jobType, sort } = req.query
+// const queryObject = { createdBy: req.user.userId }
+
+// if (search) {
+//   queryObject.position = { $regex: search, $position: "i" }
+// }
+
+// if (status && status !== "all") {
+//   queryObject.status = status
+// }
+// if (jobType && jobType !== "all") {
+//   queryObject.jobType = jobType
+// }
+
+// let result = Job.find(queryObject)
+
+// const jobs = await result
