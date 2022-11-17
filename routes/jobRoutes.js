@@ -14,7 +14,7 @@ import testUser from "../middleware/testUser.js"
 
 router.route("/").post(testUser, createJob).get(getAllJobs)
 router.route("/stats").get(showStats)
-router.route("/uploadImage").post(uploadImage)
+router.route("/uploadImage").post(testUser, uploadImage)
 router
   .route("/:id")
   .get(getSingleJob)
