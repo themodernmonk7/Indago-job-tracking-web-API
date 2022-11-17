@@ -1,6 +1,8 @@
 import User from "../models/userModel.js"
 import { StatusCodes } from "http-status-codes"
 import { BadRequestError, UnauthenticatedError } from "../errors/index.js"
+import fs from "fs"
+import { v2 as cloudinary } from "cloudinary"
 
 // * === === === === === REGISTER USER === === === === === *
 const register = async (req, res) => {
@@ -80,4 +82,25 @@ const updateUser = async (req, res) => {
   })
 }
 
-export { register, login, updateUser }
+// * === === === === ===    UPLOAD PROFILE IMAGE      === === === === === *
+const uploadProfileImage = async (req, res) => {
+  if (!req.files) {
+    throw new BadRequestError("No File Uploaded")
+  }
+  const userAvatar = req.files.image
+  if (!userAvatar.mimetype.startsWith("image")) {
+    throw new BadRequestError("Please Upload Image")
+  }
+  const maxSize = 1024 * 1024
+  if (userAvatar.size > maxSize) {
+    throw new BadRequestError("Please upload image smaller than 1MB")
+  }
+  const result = await cloudinary.uploader.upload(userAvatar.tempFilePath, {
+    use_filename: true,
+    folder: "indago/users_avatar",
+  })
+  fs.unlinkSync(userAvatar.tempFilePath) // remove temp image files from server
+  res.status(StatusCodes.OK).json({ src: result.secure_url })
+}
+
+export { register, login, updateUser, uploadProfileImage }
