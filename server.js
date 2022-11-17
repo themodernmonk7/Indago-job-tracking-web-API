@@ -14,6 +14,7 @@ cloudinary.config({
 import helmet from "helmet"
 import xss from "xss-clean"
 import cors from "cors"
+import mongoSanitize from "express-mongo-sanitize"
 import fileUpload from "express-fileupload"
 
 import connectDB from "./database/connectDB.js"
@@ -30,6 +31,7 @@ app.set("trust proxy", 1)
 app.use(helmet())
 app.use(cors())
 app.use(xss())
+app.use(mongoSanitize())
 app.use(fileUpload({ useTempFiles: true }))
 app.use(express.static("./public"))
 
