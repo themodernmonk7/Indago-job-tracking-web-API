@@ -30,7 +30,6 @@ app.set("trust proxy", 1)
 app.use(helmet())
 app.use(cors())
 app.use(xss())
-app.use(express.static("./public"))
 app.use(fileUpload({ useTempFiles: true }))
 
 app.use("/api/v1/auth", authRouter)
