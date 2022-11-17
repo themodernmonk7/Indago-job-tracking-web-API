@@ -32,6 +32,11 @@ const JobSchema = new mongoose.Schema(
       required: true,
     },
 
+    image: {
+      type: String,
+      default: "/uploads/example.jpeg",
+    },
+
     createdBy: {
       type: mongoose.Types.ObjectId,
       ref: "User",

@@ -3,6 +3,8 @@ import { StatusCodes } from "http-status-codes"
 import { BadRequestError, NotFoundError } from "../errors/index.js"
 import moment from "moment"
 import mongoose from "mongoose"
+import fs from "fs"
+import { v2 as cloudinary } from "cloudinary"
 
 // * === === === === ===    CREATE JOB      === === === === === *
 const createJob = async (req, res) => {
@@ -145,4 +147,32 @@ const showStats = async (req, res) => {
   res.status(StatusCodes.OK).json({ defaultStats, monthlyApplications: [] })
 }
 
-export { getAllJobs, getSingleJob, createJob, updateJob, deleteJob, showStats }
+// * === === === === ===    UPLOAD IMAGE      === === === === === *
+const uploadImage = async (req, res) => {
+  if (!req.files) {
+    throw new BadRequestError("No File Uploaded")
+  }
+  const companyImage = req.files.image
+  if (!companyImage.mimetype.startsWith("image")) {
+    throw new BadRequestError("Please Upload Image")
+  }
+  const maxSize = 1024 * 1024
+  if (companyImage.size > maxSize) {
+    throw new BadRequestError("Please upload image smaller than 1MB")
+  }
+  const result = await cloudinary.uploader.upload(companyImage.tempFilePath, {
+    use_filename: true,
+    folder: "indago/company_logo_images",
+  })
+  fs.unlinkSync(companyImage.tempFilePath) // remove temp image files from server
+  res.status(StatusCodes.OK).json({ src: result.secure_url })
+}
+export {
+  getAllJobs,
+  getSingleJob,
+  createJob,
+  updateJob,
+  deleteJob,
+  showStats,
+  uploadImage,
+}
