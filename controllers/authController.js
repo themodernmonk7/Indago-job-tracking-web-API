@@ -24,6 +24,7 @@ const register = async (req, res) => {
       lastName: user.lastName,
       email: user.email,
       location: user.location,
+      bio: user.bio,
       token,
     },
   })
@@ -51,14 +52,14 @@ const login = async (req, res) => {
       lastName: user.lastName,
       email: user.email,
       location: user.location,
+      bio: user.bio,
       token,
     },
   })
 }
 // * === === === === === UPDATE USER === === === === === *
 const updateUser = async (req, res) => {
-  console.log(req.user)
-  const { email, name, lastName, location } = req.body
+  const { email, name, lastName, location, bio, image } = req.body
   if (!email || !name || !lastName || !location) {
     throw new BadRequestError("Please provide all values")
   }
@@ -68,15 +69,19 @@ const updateUser = async (req, res) => {
   user.name = name
   user.lastName = lastName
   user.location = location
+  user.bio = bio
+  user.image = image
 
   await user.save()
   const token = user.createJWT()
   res.status(StatusCodes.OK).json({
     user: {
-      email: user.email,
-      lastName: user.lastName,
-      location: user.location,
       name: user.name,
+      lastName: user.lastName,
+      email: user.email,
+      location: user.location,
+      bio: user.bio,
+      image: user.image,
       token,
     },
   })
