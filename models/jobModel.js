@@ -34,7 +34,6 @@ const JobSchema = new mongoose.Schema(
 
     image: {
       type: String,
-      default: "/uploads/example.jpeg",
     },
 
     jobDescription: {

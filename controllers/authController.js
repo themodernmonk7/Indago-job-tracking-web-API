@@ -105,7 +105,7 @@ const uploadProfileImage = async (req, res) => {
     folder: "indago/users_avatar",
   })
   fs.unlinkSync(userAvatar.tempFilePath) // remove temp image files from server
-  res.status(StatusCodes.OK).json({ src: result.secure_url })
+  res.status(StatusCodes.OK).json({ image: { src: result.secure_url } })
 }
 
 export { register, login, updateUser, uploadProfileImage }
