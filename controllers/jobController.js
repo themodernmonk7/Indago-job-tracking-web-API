@@ -165,7 +165,6 @@ const uploadImage = async (req, res) => {
     folder: "indago/company_logo_images",
   })
   fs.unlinkSync(companyImage.tempFilePath) // remove temp image files from server
-  // res.status(StatusCodes.OK).json({ src: result.secure_url })
   res.status(StatusCodes.OK).json({ image: { src: result.secure_url } })
 }
 export {
