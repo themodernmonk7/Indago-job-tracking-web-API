@@ -50,6 +50,7 @@ const UserSchema = new mongoose.Schema({
 
   image: {
     type: String,
+    default: "uploads/userImage.jpeg",
   },
 })
 

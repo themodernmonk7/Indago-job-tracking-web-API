@@ -53,6 +53,7 @@ const login = async (req, res) => {
       email: user.email,
       location: user.location,
       bio: user.bio,
+      image: user.image,
       token,
     },
   })
