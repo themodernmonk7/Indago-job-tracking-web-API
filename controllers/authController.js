@@ -97,15 +97,16 @@ const uploadProfileImage = async (req, res) => {
   if (!userAvatar.mimetype.startsWith("image")) {
     throw new BadRequestError("Please Upload Image")
   }
-  const maxSize = 1024 * 1024
+  const maxSize = 1024 * 2048
   if (userAvatar.size > maxSize) {
-    throw new BadRequestError("Please upload image smaller than 1MB")
+    throw new BadRequestError("Please upload image smaller than 2MB")
   }
   const result = await cloudinary.uploader.upload(userAvatar.tempFilePath, {
     use_filename: true,
     folder: "indago/users_avatar",
   })
-  fs.unlinkSync(userAvatar.tempFilePath) // remove temp image files from server
+  // remove temporary image files from the server
+  fs.unlinkSync(userAvatar.tempFilePath)
   res.status(StatusCodes.OK).json({ image: { src: result.secure_url } })
 }
 
