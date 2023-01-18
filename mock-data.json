@@ -1,602 +1,574 @@
 [
   {
-    "company": "Huel-Gutkowski",
-    "position": "Technical Writer",
-    "status": "interview",
-    "jobType": "full-time",
-    "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2022-06-13T01:36:26Z"
-  },
-  {
-    "company": "Halvorson-Schmidt",
-    "position": "Internal Auditor",
-    "status": "declined",
-    "jobType": "remote",
-    "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2022-03-19T03:14:46Z"
-  },
-  {
-    "company": "Rogahn-Johnson",
-    "position": "Internal Auditor",
-    "status": "declined",
-    "jobType": "part-time",
-    "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2021-09-11T10:13:12Z"
-  },
-  {
-    "company": "Hoppe and Sons",
-    "position": "GIS Technical Architect",
-    "status": "declined",
-    "jobType": "part-time",
-    "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2022-08-09T00:46:14Z"
-  },
-  {
-    "company": "Runolfsson LLC",
-    "position": "Geologist I",
+    "company": "Google",
+    "position": "Web engineer",
     "status": "pending",
     "jobType": "part-time",
+    "jobLocation": "Chennai",
+    "image": "https://placeimg.com/400/225/tech",
+    "jobDescription": "Horizontal content-based process improvement",
     "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2021-12-25T23:41:49Z"
+    "createdAt": "2022-03-26T17:21:02Z"
   },
   {
-    "company": "Von Group",
-    "position": "Electrical Engineer",
-    "status": "pending",
-    "jobType": "internship",
-    "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2022-04-18T18:36:02Z"
-  },
-  {
-    "company": "Nitzsche, Marquardt and Kling",
-    "position": "Research Associate",
-    "status": "pending",
-    "jobType": "remote",
-    "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2022-01-13T03:36:17Z"
-  },
-  {
-    "company": "O'Conner-Smitham",
-    "position": "Operator",
-    "status": "pending",
-    "jobType": "remote",
-    "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2021-10-08T16:56:15Z"
-  },
-  {
-    "company": "Swift Group",
-    "position": "Staff Accountant II",
-    "status": "interview",
-    "jobType": "part-time",
-    "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2022-07-13T08:56:08Z"
-  },
-  {
-    "company": "Smith, Gusikowski and Bahringer",
-    "position": "Financial Analyst",
-    "status": "interview",
-    "jobType": "remote",
-    "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2021-12-18T13:23:37Z"
-  },
-  {
-    "company": "Hyatt-Hudson",
-    "position": "Help Desk Operator",
-    "status": "interview",
-    "jobType": "internship",
-    "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2022-02-17T00:42:47Z"
-  },
-  {
-    "company": "Douglas Inc",
-    "position": "Electrical Engineer",
-    "status": "pending",
-    "jobType": "internship",
-    "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2021-12-29T02:42:36Z"
-  },
-  {
-    "company": "Wiegand-O'Connell",
-    "position": "Marketing Manager",
-    "status": "pending",
-    "jobType": "remote",
-    "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2022-04-29T02:50:42Z"
-  },
-  {
-    "company": "Mitchell, Quitzon and Kuphal",
-    "position": "Software Consultant",
-    "status": "interview",
-    "jobType": "internship",
-    "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2021-12-28T23:18:11Z"
-  },
-  {
-    "company": "Cruickshank and Sons",
-    "position": "Actuary",
-    "status": "declined",
-    "jobType": "remote",
-    "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2022-07-22T18:06:19Z"
-  },
-  {
-    "company": "Sporer-Price",
-    "position": "Physical Therapy Assistant",
-    "status": "pending",
-    "jobType": "internship",
-    "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2021-12-07T23:51:56Z"
-  },
-  {
-    "company": "Miller LLC",
-    "position": "Clinical Specialist",
-    "status": "interview",
-    "jobType": "remote",
-    "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2022-03-23T00:48:54Z"
-  },
-  {
-    "company": "Volkman, Jast and Wuckert",
-    "position": "Internal Auditor",
+    "company": "Amazon",
+    "position": "Technical lead",
     "status": "pending",
     "jobType": "part-time",
+    "jobLocation": "New Delhi",
+    "image": "https://placeimg.com/400/225/tech",
+    "jobDescription": "User-friendly scalable workforce",
     "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2022-07-01T03:56:33Z"
+    "createdAt": "2022-08-22T05:52:54Z"
   },
   {
-    "company": "Bednar-Reichert",
-    "position": "Environmental Tech",
-    "status": "declined",
-    "jobType": "internship",
-    "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2022-05-03T03:03:10Z"
-  },
-  {
-    "company": "McGlynn, Schroeder and Stanton",
-    "position": "Systems Administrator II",
-    "status": "pending",
-    "jobType": "internship",
-    "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2022-03-05T19:40:30Z"
-  },
-  {
-    "company": "Bahringer, O'Reilly and Bogisich",
-    "position": "Chemical Engineer",
-    "status": "interview",
-    "jobType": "internship",
-    "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2021-10-08T12:16:16Z"
-  },
-  {
-    "company": "Weber-Walker",
-    "position": "Financial Advisor",
-    "status": "interview",
-    "jobType": "internship",
-    "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2022-07-11T05:28:00Z"
-  },
-  {
-    "company": "Hudson, Wilderman and Ward",
-    "position": "Editor",
-    "status": "pending",
-    "jobType": "part-time",
-    "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2022-01-04T11:28:34Z"
-  },
-  {
-    "company": "Block, Ondricka and Runte",
-    "position": "Account Representative I",
-    "status": "interview",
-    "jobType": "part-time",
-    "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2021-12-11T17:34:09Z"
-  },
-  {
-    "company": "Hartmann, Feeney and Harris",
-    "position": "Web Developer III",
-    "status": "declined",
-    "jobType": "internship",
-    "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2022-05-12T14:07:31Z"
-  },
-  {
-    "company": "Rosenbaum LLC",
-    "position": "Human Resources Assistant I",
+    "company": "Meta",
+    "position": "Cloud architect",
     "status": "pending",
     "jobType": "remote",
+    "jobLocation": "Hydrabad",
+    "image": "https://placeimg.com/400/225/tech",
+    "jobDescription": "Open-architected asynchronous alliance",
     "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2022-02-27T00:05:46Z"
+    "createdAt": "2021-10-31T16:41:09Z"
   },
   {
-    "company": "Luettgen LLC",
-    "position": "Senior Cost Accountant",
+    "company": "HCL",
+    "position": "Security Engineer",
+    "status": "declined",
+    "jobType": "part-time",
+    "jobLocation": "Pune",
+    "image": "https://placeimg.com/400/225/tech",
+    "jobDescription": "Intuitive secondary policy",
+    "createdBy": "63738c715a5d304cb805c6ed",
+    "createdAt": "2021-05-26T12:58:08Z"
+  },
+  {
+    "company": "Cisco",
+    "position": "Chief information officer (CIO)",
+    "status": "pending",
+    "jobType": "remote",
+    "jobLocation": "Mumbai",
+    "image": "https://placeimg.com/400/225/tech",
+    "jobDescription": "Devolved radical monitoring",
+    "createdBy": "63738c715a5d304cb805c6ed",
+    "createdAt": "2022-05-09T19:44:37Z"
+  },
+  {
+    "company": "Netflix",
+    "position": "Web engineer",
+    "status": "pending",
+    "jobType": "part-time",
+    "jobLocation": "Banglore",
+    "image": "https://placeimg.com/400/225/tech",
+    "jobDescription": "Enhanced eco-centric hardware",
+    "createdBy": "63738c715a5d304cb805c6ed",
+    "createdAt": "2021-07-14T11:40:01Z"
+  },
+  {
+    "company": "Dribbble",
+    "position": "Chief information officer (CIO)",
+    "status": "declined",
+    "jobType": "remote",
+    "jobLocation": "Mumbai",
+    "image": "https://placeimg.com/400/225/tech",
+    "jobDescription": "Secured mission-critical array",
+    "createdBy": "63738c715a5d304cb805c6ed",
+    "createdAt": "2021-08-12T06:55:27Z"
+  },
+  {
+    "company": "Microsoft",
+    "position": "Technical specialist",
     "status": "declined",
     "jobType": "internship",
+    "jobLocation": "Mumbai",
+    "image": "https://placeimg.com/400/225/tech",
+    "jobDescription": "Business-focused needs-based local area network",
     "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2021-11-12T16:52:31Z"
+    "createdAt": "2021-02-18T23:57:13Z"
   },
   {
-    "company": "Gleason-Bednar",
-    "position": "Analog Circuit Design manager",
+    "company": "TCS",
+    "position": "IT manager",
+    "status": "interview",
+    "jobType": "internship",
+    "jobLocation": "Pune",
+    "image": "https://placeimg.com/400/225/tech",
+    "jobDescription": "Expanded object-oriented hardware",
+    "createdBy": "63738c715a5d304cb805c6ed",
+    "createdAt": "2022-03-07T03:05:33Z"
+  },
+  {
+    "company": "Infosys",
+    "position": "Technical lead",
     "status": "pending",
     "jobType": "full-time",
+    "jobLocation": "Mumbai",
+    "image": "https://placeimg.com/400/225/tech",
+    "jobDescription": "Diverse national neural-net",
     "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2021-08-14T00:28:19Z"
+    "createdAt": "2021-05-21T19:52:42Z"
   },
   {
-    "company": "Bogan Inc",
-    "position": "Nurse",
-    "status": "pending",
-    "jobType": "part-time",
-    "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2022-06-20T10:03:34Z"
-  },
-  {
-    "company": "Weber-Block",
-    "position": "Senior Developer",
-    "status": "pending",
-    "jobType": "part-time",
-    "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2022-01-26T23:24:54Z"
-  },
-  {
-    "company": "Casper-Smitham",
-    "position": "Account Representative I",
-    "status": "declined",
-    "jobType": "internship",
-    "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2022-05-09T06:07:46Z"
-  },
-  {
-    "company": "Walsh-Mosciski",
-    "position": "Software Test Engineer III",
-    "status": "interview",
-    "jobType": "part-time",
-    "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2022-03-25T22:49:04Z"
-  },
-  {
-    "company": "Senger, Russel and Leuschke",
-    "position": "Compensation Analyst",
-    "status": "pending",
-    "jobType": "part-time",
-    "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2022-04-08T00:58:43Z"
-  },
-  {
-    "company": "Denesik-Davis",
-    "position": "Automation Specialist I",
-    "status": "pending",
-    "jobType": "remote",
-    "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2021-09-07T04:57:17Z"
-  },
-  {
-    "company": "Luettgen-Kilback",
-    "position": "Accountant II",
-    "status": "pending",
-    "jobType": "remote",
-    "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2021-10-05T06:19:27Z"
-  },
-  {
-    "company": "McKenzie and Sons",
-    "position": "Human Resources Assistant I",
-    "status": "declined",
-    "jobType": "internship",
-    "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2022-01-02T08:34:09Z"
-  },
-  {
-    "company": "Gulgowski LLC",
-    "position": "Programmer IV",
-    "status": "pending",
-    "jobType": "remote",
-    "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2022-06-24T21:19:23Z"
-  },
-  {
-    "company": "Kozey-Keebler",
-    "position": "Database Administrator II",
-    "status": "declined",
-    "jobType": "full-time",
-    "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2021-11-18T18:40:19Z"
-  },
-  {
-    "company": "Kihn-Boyle",
-    "position": "Environmental Tech",
-    "status": "interview",
-    "jobType": "internship",
-    "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2021-11-09T18:43:06Z"
-  },
-  {
-    "company": "Brekke Group",
-    "position": "Graphic Designer",
-    "status": "pending",
-    "jobType": "full-time",
-    "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2022-01-20T02:36:08Z"
-  },
-  {
-    "company": "Weber, Barrows and Shields",
-    "position": "Electrical Engineer",
-    "status": "declined",
-    "jobType": "internship",
-    "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2021-12-03T06:53:52Z"
-  },
-  {
-    "company": "Blanda LLC",
-    "position": "Accounting Assistant III",
-    "status": "pending",
-    "jobType": "full-time",
-    "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2021-12-03T08:04:03Z"
-  },
-  {
-    "company": "Schowalter, McKenzie and Hickle",
-    "position": "GIS Technical Architect",
-    "status": "pending",
-    "jobType": "part-time",
-    "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2022-04-20T03:37:51Z"
-  },
-  {
-    "company": "Flatley Group",
-    "position": "Associate Professor",
-    "status": "interview",
-    "jobType": "full-time",
-    "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2022-06-16T09:49:49Z"
-  },
-  {
-    "company": "Ward and Sons",
-    "position": "Graphic Designer",
+    "company": "Twitter",
+    "position": "Software test engineer",
     "status": "interview",
     "jobType": "remote",
+    "jobLocation": "New Delhi",
+    "image": "https://placeimg.com/400/225/tech",
+    "jobDescription": "Phased homogeneous challenge",
     "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2022-08-06T19:00:39Z"
+    "createdAt": "2021-12-24T03:15:36Z"
   },
   {
-    "company": "Greenholt and Sons",
-    "position": "Senior Quality Engineer",
-    "status": "pending",
-    "jobType": "remote",
-    "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2022-01-09T04:57:45Z"
-  },
-  {
-    "company": "Wintheiser Inc",
-    "position": "Cost Accountant",
-    "status": "pending",
-    "jobType": "part-time",
-    "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2022-01-09T21:23:00Z"
-  },
-  {
-    "company": "Reilly, Baumbach and Schneider",
-    "position": "Executive Secretary",
-    "status": "interview",
-    "jobType": "part-time",
-    "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2022-03-28T18:07:56Z"
-  },
-  {
-    "company": "Boyle-Feeney",
-    "position": "Chemical Engineer",
-    "status": "interview",
-    "jobType": "internship",
-    "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2022-02-27T16:33:15Z"
-  },
-  {
-    "company": "Schowalter, Smith and Boyle",
-    "position": "Information Systems Manager",
-    "status": "pending",
-    "jobType": "full-time",
-    "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2022-08-03T17:37:33Z"
-  },
-  {
-    "company": "Olson-Sawayn",
-    "position": "Geological Engineer",
-    "status": "pending",
-    "jobType": "remote",
-    "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2021-08-30T17:41:19Z"
-  },
-  {
-    "company": "Stroman, Carter and Russel",
-    "position": "Community Outreach Specialist",
-    "status": "interview",
-    "jobType": "internship",
-    "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2021-12-15T16:44:51Z"
-  },
-  {
-    "company": "Russel-Cummerata",
-    "position": "Information Systems Manager",
+    "company": "Apple",
+    "position": "Cloud system administrator",
     "status": "declined",
     "jobType": "part-time",
+    "jobLocation": "Banglore",
+    "image": "https://placeimg.com/400/225/tech",
+    "jobDescription": "Reduced attitude-oriented focus group",
     "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2021-10-19T08:05:51Z"
+    "createdAt": "2021-05-18T06:13:45Z"
   },
   {
-    "company": "Feest-Wisozk",
-    "position": "Assistant Media Planner",
-    "status": "declined",
-    "jobType": "full-time",
-    "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2021-08-25T09:40:34Z"
-  },
-  {
-    "company": "Moore, O'Reilly and Spinka",
-    "position": "Community Outreach Specialist",
-    "status": "interview",
-    "jobType": "full-time",
-    "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2022-04-19T05:07:39Z"
-  },
-  {
-    "company": "Jacobs LLC",
-    "position": "Senior Developer",
-    "status": "pending",
-    "jobType": "internship",
-    "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2021-08-14T04:17:36Z"
-  },
-  {
-    "company": "Parisian-Ondricka",
-    "position": "Nurse Practicioner",
-    "status": "interview",
-    "jobType": "part-time",
-    "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2021-09-20T14:27:15Z"
-  },
-  {
-    "company": "Lubowitz and Sons",
-    "position": "Accountant II",
+    "company": "IBM",
+    "position": "Software test engineer",
     "status": "interview",
     "jobType": "remote",
+    "jobLocation": "Banglore",
+    "image": "https://placeimg.com/400/225/tech",
+    "jobDescription": "Monitored didactic service-desk",
     "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2021-12-12T02:51:11Z"
+    "createdAt": "2021-03-06T08:07:54Z"
   },
   {
-    "company": "Kilback-Morissette",
-    "position": "Human Resources Manager",
+    "company": "Salesforce Inc",
+    "position": "Software development engineer",
     "status": "interview",
     "jobType": "internship",
+    "jobLocation": "Banglore",
+    "image": "https://placeimg.com/400/225/tech",
+    "jobDescription": "Universal human-resource encryption",
     "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2022-08-06T21:17:03Z"
+    "createdAt": "2021-04-02T02:39:26Z"
   },
   {
-    "company": "Padberg, Lindgren and Volkman",
-    "position": "Pharmacist",
-    "status": "interview",
-    "jobType": "remote",
-    "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2021-10-16T06:03:16Z"
-  },
-  {
-    "company": "Buckridge-Howell",
-    "position": "Graphic Designer",
+    "company": "Adobe",
+    "position": "IT manager",
     "status": "declined",
-    "jobType": "part-time",
+    "jobType": "remote",
+    "jobLocation": "Banglore",
+    "image": "https://placeimg.com/400/225/tech",
+    "jobDescription": "Profit-focused secondary installation",
     "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2022-06-23T22:02:21Z"
+    "createdAt": "2021-11-04T19:54:45Z"
   },
   {
-    "company": "Pagac-Davis",
-    "position": "Structural Engineer",
-    "status": "interview",
-    "jobType": "full-time",
-    "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2022-07-04T19:51:53Z"
-  },
-  {
-    "company": "Johns-Klocko",
-    "position": "VP Accounting",
+    "company": "Nvidia",
+    "position": "Game developer",
     "status": "pending",
     "jobType": "remote",
+    "jobLocation": "New Delhi",
+    "image": "https://placeimg.com/400/225/tech",
+    "jobDescription": "Fundamental zero defect application",
     "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2022-04-02T18:39:10Z"
+    "createdAt": "2022-08-04T22:50:09Z"
   },
   {
-    "company": "Dickens Inc",
-    "position": "Research Nurse",
-    "status": "declined",
+    "company": "Linkedin",
+    "position": "IT director",
+    "status": "pending",
+    "jobType": "remote",
+    "jobLocation": "Pune",
+    "image": "https://placeimg.com/400/225/tech",
+    "jobDescription": "Customer-focused contextually-based flexibility",
+    "createdBy": "63738c715a5d304cb805c6ed",
+    "createdAt": "2022-06-30T10:08:44Z"
+  },
+  {
+    "company": "Wipro",
+    "position": "Software development engineer",
+    "status": "interview",
     "jobType": "internship",
+    "jobLocation": "Hydrabad",
+    "image": "https://placeimg.com/400/225/tech",
+    "jobDescription": "Exclusive mobile toolset",
     "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2022-01-27T04:51:37Z"
+    "createdAt": "2021-06-08T07:41:05Z"
   },
   {
-    "company": "Veum-Stark",
-    "position": "Accounting Assistant II",
+    "company": "Tech Mahindra",
+    "position": "Web designer",
+    "status": "declined",
+    "jobType": "full-time",
+    "jobLocation": "New Delhi",
+    "image": "https://placeimg.com/400/225/tech",
+    "jobDescription": "Adaptive 24 hour policy",
+    "createdBy": "63738c715a5d304cb805c6ed",
+    "createdAt": "2022-09-30T08:03:06Z"
+  },
+  {
+    "company": "L&T",
+    "position": "IT technician",
+    "status": "pending",
+    "jobType": "remote",
+    "jobLocation": "Chennai",
+    "image": "https://placeimg.com/400/225/tech",
+    "jobDescription": "Open-architected contextually-based hub",
+    "createdBy": "63738c715a5d304cb805c6ed",
+    "createdAt": "2022-06-03T22:34:08Z"
+  },
+  {
+    "company": "Accenture",
+    "position": "User experience (UX) designer",
+    "status": "declined",
+    "jobType": "remote",
+    "jobLocation": "Mumbai",
+    "image": "https://placeimg.com/400/225/tech",
+    "jobDescription": "Pre-emptive tangible solution",
+    "createdBy": "63738c715a5d304cb805c6ed",
+    "createdAt": "2021-12-03T08:41:56Z"
+  },
+  {
+    "company": "Oracle",
+    "position": "User experience (UX) designer",
     "status": "declined",
     "jobType": "part-time",
+    "jobLocation": "Chennai",
+    "image": "https://placeimg.com/400/225/tech",
+    "jobDescription": "Visionary discrete ability",
     "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2021-09-16T05:59:25Z"
+    "createdAt": "2022-06-08T00:04:53Z"
   },
   {
-    "company": "Lockman-Kiehn",
-    "position": "Compensation Analyst",
-    "status": "declined",
-    "jobType": "full-time",
-    "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2022-05-27T11:40:47Z"
-  },
-  {
-    "company": "Toy, Witting and Moen",
-    "position": "Account Executive",
-    "status": "declined",
-    "jobType": "full-time",
-    "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2022-08-03T07:08:07Z"
-  },
-  {
-    "company": "Hermann, Upton and McCullough",
-    "position": "Systems Administrator IV",
+    "company": "Cognizant",
+    "position": "IT technician",
     "status": "pending",
     "jobType": "internship",
+    "jobLocation": "Pune",
+    "image": "https://placeimg.com/400/225/tech",
+    "jobDescription": "Face to face interactive definition",
     "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2022-01-03T09:59:54Z"
+    "createdAt": "2022-09-28T10:27:15Z"
   },
   {
-    "company": "Rohan, Streich and O'Hara",
-    "position": "Teacher",
+    "company": "Flipkart",
+    "position": "Database engineer",
+    "status": "pending",
+    "jobType": "remote",
+    "jobLocation": "Chennai",
+    "image": "https://placeimg.com/400/225/tech",
+    "jobDescription": "Versatile human-resource access",
+    "createdBy": "63738c715a5d304cb805c6ed",
+    "createdAt": "2021-03-27T04:38:47Z"
+  },
+  {
+    "company": "Dell",
+    "position": "Computer programmer",
+    "status": "interview",
+    "jobType": "internship",
+    "jobLocation": "Banglore",
+    "image": "https://placeimg.com/400/225/tech",
+    "jobDescription": "Assimilated heuristic conglomeration",
+    "createdBy": "63738c715a5d304cb805c6ed",
+    "createdAt": "2021-02-18T07:29:11Z"
+  },
+  {
+    "company": "Myntra",
+    "position": "Operations analyst",
+    "status": "pending",
+    "jobType": "full-time",
+    "jobLocation": "Hydrabad",
+    "image": "https://placeimg.com/400/225/tech",
+    "jobDescription": "De-engineered systemic firmware",
+    "createdBy": "63738c715a5d304cb805c6ed",
+    "createdAt": "2021-02-24T01:03:03Z"
+  },
+  {
+    "company": "Groww",
+    "position": "Web producers",
+    "status": "interview",
+    "jobType": "internship",
+    "jobLocation": "Chennai",
+    "image": "https://placeimg.com/400/225/tech",
+    "jobDescription": "Diverse needs-based process improvement",
+    "createdBy": "63738c715a5d304cb805c6ed",
+    "createdAt": "2021-10-14T22:41:36Z"
+  },
+  {
+    "company": "Nykaa",
+    "position": "Cloud systems engineer",
+    "status": "declined",
+    "jobType": "full-time",
+    "jobLocation": "Mumbai",
+    "image": "https://placeimg.com/400/225/tech",
+    "jobDescription": "Reactive next generation initiative",
+    "createdBy": "63738c715a5d304cb805c6ed",
+    "createdAt": "2022-09-26T02:23:35Z"
+  },
+  {
+    "company": "Udana",
+    "position": "Front-end developer",
+    "status": "pending",
+    "jobType": "remote",
+    "jobLocation": "Banglore",
+    "image": "https://placeimg.com/400/225/tech",
+    "jobDescription": "Compatible empowering conglomeration",
+    "createdBy": "63738c715a5d304cb805c6ed",
+    "createdAt": "2022-04-18T17:05:26Z"
+  },
+  {
+    "company": "PostMan",
+    "position": "IT sales executive",
+    "status": "declined",
+    "jobType": "full-time",
+    "jobLocation": "New Delhi",
+    "image": "https://placeimg.com/400/225/tech",
+    "jobDescription": "Self-enabling mobile Graphic Interface",
+    "createdBy": "63738c715a5d304cb805c6ed",
+    "createdAt": "2022-11-07T04:27:39Z"
+  },
+  {
+    "company": "Delhivery",
+    "position": "Director of technology",
+    "status": "pending",
+    "jobType": "full-time",
+    "jobLocation": "New Delhi",
+    "image": "https://placeimg.com/400/225/tech",
+    "jobDescription": "Self-enabling cohesive access",
+    "createdBy": "63738c715a5d304cb805c6ed",
+    "createdAt": "2021-07-05T08:06:53Z"
+  },
+  {
+    "company": "Practo",
+    "position": "Chief information officer (CIO)",
+    "status": "interview",
+    "jobType": "internship",
+    "jobLocation": "Banglore",
+    "image": "https://placeimg.com/400/225/tech",
+    "jobDescription": "Multi-layered uniform installation",
+    "createdBy": "63738c715a5d304cb805c6ed",
+    "createdAt": "2021-04-26T16:37:51Z"
+  },
+  {
+    "company": "Boat",
+    "position": "IT director",
+    "status": "declined",
+    "jobType": "remote",
+    "jobLocation": "Banglore",
+    "image": "https://placeimg.com/400/225/tech",
+    "jobDescription": "Future-proofed national collaboration",
+    "createdBy": "63738c715a5d304cb805c6ed",
+    "createdAt": "2022-05-28T15:10:07Z"
+  },
+  {
+    "company": "Byju's",
+    "position": "Technical support",
+    "status": "pending",
+    "jobType": "part-time",
+    "jobLocation": "Banglore",
+    "image": "https://placeimg.com/400/225/tech",
+    "jobDescription": "Assimilated context-sensitive firmware",
+    "createdBy": "63738c715a5d304cb805c6ed",
+    "createdAt": "2022-02-19T23:23:15Z"
+  },
+  {
+    "company": "Razorpay",
+    "position": "Cloud systems engineer",
+    "status": "declined",
+    "jobType": "internship",
+    "jobLocation": "Banglore",
+    "image": "https://placeimg.com/400/225/tech",
+    "jobDescription": "Synchronised mobile utilisation",
+    "createdBy": "63738c715a5d304cb805c6ed",
+    "createdAt": "2022-07-18T14:11:42Z"
+  },
+  {
+    "company": "UpGrad",
+    "position": "Full-stack developer",
+    "status": "declined",
+    "jobType": "full-time",
+    "jobLocation": "Hydrabad",
+    "image": "https://placeimg.com/400/225/tech",
+    "jobDescription": "Multi-tiered zero administration pricing structure",
+    "createdBy": "63738c715a5d304cb805c6ed",
+    "createdAt": "2021-10-20T04:36:12Z"
+  },
+  {
+    "company": "Unacademy",
+    "position": "Mobile developer",
+    "status": "declined",
+    "jobType": "full-time",
+    "jobLocation": "Pune",
+    "image": "https://placeimg.com/400/225/tech",
+    "jobDescription": "Visionary explicit budgetary management",
+    "createdBy": "63738c715a5d304cb805c6ed",
+    "createdAt": "2022-04-11T18:30:53Z"
+  },
+  {
+    "company": "Dunzo",
+    "position": "Web producers",
+    "status": "declined",
+    "jobType": "remote",
+    "jobLocation": "Pune",
+    "image": "https://placeimg.com/400/225/tech",
+    "jobDescription": "Focused client-server knowledge base",
+    "createdBy": "63738c715a5d304cb805c6ed",
+    "createdAt": "2021-10-01T12:55:08Z"
+  },
+  {
+    "company": "Car24",
+    "position": "Web engineer",
+    "status": "declined",
+    "jobType": "internship",
+    "jobLocation": "Pune",
+    "image": "https://placeimg.com/400/225/tech",
+    "jobDescription": "Reverse-engineered 24 hour solution",
+    "createdBy": "63738c715a5d304cb805c6ed",
+    "createdAt": "2021-05-12T20:49:17Z"
+  },
+  {
+    "company": "Upstox",
+    "position": "Database engineer",
+    "status": "pending",
+    "jobType": "part-time",
+    "jobLocation": "New Delhi",
+    "image": "https://placeimg.com/400/225/tech",
+    "jobDescription": "Triple-buffered foreground algorithm",
+    "createdBy": "63738c715a5d304cb805c6ed",
+    "createdAt": "2022-09-07T19:21:42Z"
+  },
+  {
+    "company": "Zoho",
+    "position": "User experience (UX) designer",
+    "status": "declined",
+    "jobType": "internship",
+    "jobLocation": "Mumbai",
+    "image": "https://placeimg.com/400/225/tech",
+    "jobDescription": "Distributed demand-driven productivity",
+    "createdBy": "63738c715a5d304cb805c6ed",
+    "createdAt": "2021-10-08T18:46:12Z"
+  },
+  {
+    "company": "PayTm",
+    "position": "User experience (UX) designer",
+    "status": "declined",
+    "jobType": "internship",
+    "jobLocation": "Banglore",
+    "image": "https://placeimg.com/400/225/tech",
+    "jobDescription": "Virtual holistic open system",
+    "createdBy": "63738c715a5d304cb805c6ed",
+    "createdAt": "2022-10-23T03:45:33Z"
+  },
+  {
+    "company": "inMobi",
+    "position": "Computer programmer",
+    "status": "pending",
+    "jobType": "internship",
+    "jobLocation": "Banglore",
+    "image": "https://placeimg.com/400/225/tech",
+    "jobDescription": "Distributed intermediate definition",
+    "createdBy": "63738c715a5d304cb805c6ed",
+    "createdAt": "2022-10-20T12:44:40Z"
+  },
+  {
+    "company": "Deloitte",
+    "position": "Chief technology officer (CTO)",
     "status": "interview",
     "jobType": "part-time",
+    "jobLocation": "Banglore",
+    "image": "https://placeimg.com/400/225/tech",
+    "jobDescription": "Inverse intangible methodology",
     "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2022-03-12T17:30:18Z"
+    "createdAt": "2021-10-31T14:03:40Z"
   },
   {
-    "company": "Lebsack-Ernser",
-    "position": "VP Marketing",
+    "company": "PhonePe",
+    "position": "Cloud product manager",
     "status": "declined",
-    "jobType": "remote",
+    "jobType": "part-time",
+    "jobLocation": "New Delhi",
+    "image": "https://placeimg.com/400/225/tech",
+    "jobDescription": "Ergonomic 24 hour infrastructure",
     "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2021-11-02T03:47:24Z"
+    "createdAt": "2022-12-06T13:27:19Z"
   },
   {
-    "company": "Morar-Auer",
-    "position": "Research Assistant IV",
-    "status": "interview",
-    "jobType": "remote",
-    "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2022-03-15T21:53:49Z"
-  },
-  {
-    "company": "Bernier, Stamm and Batz",
-    "position": "Software Engineer IV",
-    "status": "declined",
-    "jobType": "internship",
-    "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2022-01-25T14:54:18Z"
-  },
-  {
-    "company": "Orn LLC",
-    "position": "Marketing Assistant",
+    "company": "Samsung",
+    "position": "Technical specialist",
     "status": "interview",
     "jobType": "internship",
+    "jobLocation": "Banglore",
+    "image": "https://placeimg.com/400/225/tech",
+    "jobDescription": "Configurable explicit task-force",
     "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2022-07-04T11:29:41Z"
+    "createdAt": "2022-01-19T12:59:10Z"
   },
   {
-    "company": "Bartell, Grady and Effertz",
-    "position": "Nurse",
-    "status": "declined",
-    "jobType": "full-time",
+    "company": "Tencent",
+    "position": "Director of technology",
+    "status": "interview",
+    "jobType": "part-time",
+    "jobLocation": "Mumbai",
+    "image": "https://placeimg.com/400/225/tech",
+    "jobDescription": "Fundamental encompassing migration",
     "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2022-03-22T21:30:46Z"
+    "createdAt": "2022-03-26T00:50:26Z"
   },
   {
-    "company": "Legros LLC",
-    "position": "Safety Technician IV",
-    "status": "declined",
+    "company": "Intuit",
+    "position": "Director of technology",
+    "status": "pending",
     "jobType": "full-time",
+    "jobLocation": "New Delhi",
+    "image": "https://placeimg.com/400/225/tech",
+    "jobDescription": "Synchronised modular synergy",
     "createdBy": "63738c715a5d304cb805c6ed",
-    "createdAt": "2021-08-23T16:37:09Z"
+    "createdAt": "2021-04-30T10:15:01Z"
+  },
+  {
+    "company": "Uber",
+    "position": "Security Engineer",
+    "status": "interview",
+    "jobType": "full-time",
+    "jobLocation": "New Delhi",
+    "image": "https://placeimg.com/400/225/tech",
+    "jobDescription": "Implemented zero tolerance intranet",
+    "createdBy": "63738c715a5d304cb805c6ed",
+    "createdAt": "2022-06-08T23:21:37Z"
+  },
+  {
+    "company": "Shopify",
+    "position": "Chief information officer (CIO)",
+    "status": "interview",
+    "jobType": "remote",
+    "jobLocation": "Hydrabad",
+    "image": "https://placeimg.com/400/225/tech",
+    "jobDescription": "Stand-alone exuding standardization",
+    "createdBy": "63738c715a5d304cb805c6ed",
+    "createdAt": "2021-05-16T12:08:56Z"
+  },
+  {
+    "company": "Atlassian",
+    "position": "Systems designer",
+    "status": "pending",
+    "jobType": "full-time",
+    "jobLocation": "Chennai",
+    "image": "https://placeimg.com/400/225/tech",
+    "jobDescription": "Fundamental next generation core",
+    "createdBy": "63738c715a5d304cb805c6ed",
+    "createdAt": "2022-09-02T11:16:18Z"
+  },
+  {
+    "company": "Intel",
+    "position": "Frameworks specialist",
+    "status": "pending",
+    "jobType": "internship",
+    "jobLocation": "Hydrabad",
+    "image": "https://placeimg.com/400/225/tech",
+    "jobDescription": "Cross-platform leading edge local area network",
+    "createdBy": "63738c715a5d304cb805c6ed",
+    "createdAt": "2022-05-30T02:35:40Z"
   }
 ]
