@@ -52,6 +52,17 @@ const UserSchema = new mongoose.Schema({
     type: String,
     default: "uploads/userImage.jpeg",
   },
+
+  verificationToken: {
+    type: String,
+  },
+
+  isVerified: {
+    type: Boolean,
+    default: false,
+  },
+
+  verified: Date,
 })
 
 UserSchema.pre("save", async function () {
