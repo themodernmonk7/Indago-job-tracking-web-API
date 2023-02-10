@@ -50,7 +50,8 @@ const UserSchema = new mongoose.Schema({
 
   image: {
     type: String,
-    default: "uploads/userImage.jpeg",
+    default:
+      "https://res.cloudinary.com/die12ywpb/image/upload/v1676027217/indago/default_user_avatar_eucyps.jpg",
   },
 
   verificationToken: {
