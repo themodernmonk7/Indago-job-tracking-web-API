@@ -3,7 +3,8 @@ import { StatusCodes } from "http-status-codes"
 import { BadRequestError, UnauthenticatedError } from "../errors/index.js"
 import fs from "fs"
 import { v2 as cloudinary } from "cloudinary"
-
+import crypto from "crypto"
+import { sendVerificationEmail } from "../utils/index.js"
 // * === === === === === REGISTER USER === === === === === *
 const register = async (req, res) => {
   const { name, email, password } = req.body
@@ -16,19 +17,43 @@ const register = async (req, res) => {
   if (isUserAlreadyExist) {
     throw new BadRequestError("Email already in use")
   }
-  const user = await User.create({ ...req.body })
-  const token = user.createJWT()
+  const verificationToken = crypto.randomBytes(40).toString("hex")
+  const user = await User.create({ ...req.body, verificationToken })
+  // Send email
+  // const origin = "http://localhost:5000/api/v1"
+  const origin = "http://localhost:5173"
+  await sendVerificationEmail({
+    name: user.name,
+    email: user.email,
+    verificationToken: user.verificationToken,
+    origin,
+  })
+  // Send verification token back only while testing in postman
   res.status(StatusCodes.CREATED).json({
-    user: {
-      name: user.name,
-      lastName: user.lastName,
-      email: user.email,
-      location: user.location,
-      bio: user.bio,
-      token,
-    },
+    msg: "Please check your email to verify your account",
   })
 }
+
+// * === === === === === Verify User Account === === === === === *
+const emailVerification = async (req, res) => {
+  const { verificationToken, email } = req.body
+  // Check if user exists or not in our database
+  const user = await User.findOne({ email })
+  if (!user) {
+    throw new UnauthenticatedError(`Verification failed`)
+  }
+  // Check if verification token that is coming from frontend is match to our database verification token or not
+  if (user.verificationToken !== verificationToken) {
+    throw new UnauthenticatedError(`Verification failed. Token does not match`)
+  }
+  // If verification token is match then set
+  user.isVerified = true
+  user.verified = Date.now()
+  user.verificationToken = ""
+  await user.save()
+  res.status(StatusCodes.OK).json({ msg: "Email verified successfully!" })
+}
+
 // * === === === === === LOGIN USER === === === === === *
 const login = async (req, res) => {
   const { email, password } = req.body
@@ -44,6 +69,12 @@ const login = async (req, res) => {
   if (!isPasswordCorrect) {
     throw new UnauthenticatedError(`Invalid credentials`)
   }
+
+  // Check if user is verified or not
+  if (!user.isVerified) {
+    throw new UnauthenticatedError("Please verify your email")
+  }
+
   const token = user.createJWT()
   user.password = undefined
   res.status(StatusCodes.OK).json({
@@ -58,6 +89,7 @@ const login = async (req, res) => {
     },
   })
 }
+
 // * === === === === === UPDATE USER === === === === === *
 const updateUser = async (req, res) => {
   const { email, name, lastName, location, bio, image } = req.body
@@ -110,4 +142,4 @@ const uploadProfileImage = async (req, res) => {
   res.status(StatusCodes.OK).json({ image: { src: result.secure_url } })
 }
 
-export { register, login, updateUser, uploadProfileImage }
+export { register, login, updateUser, uploadProfileImage, emailVerification }
