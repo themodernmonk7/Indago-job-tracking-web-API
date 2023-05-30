@@ -35,7 +35,7 @@ app.set("trust proxy", 1)
 app.use(helmet())
 app.use(
   cors({
-    origin: import.meta.env.ORIGIN,
+    origin: "https://indago-job.netlify.app",
     credentials: true, // Allow including credentials (e.g., cookies)
   })
 )
