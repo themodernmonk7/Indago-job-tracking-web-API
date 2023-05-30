@@ -4,6 +4,7 @@ import auth from "../middleware/authentication.js"
 import {
   register,
   login,
+  logout,
   updateUser,
   uploadProfileImage,
 } from "../controllers/authController.js"
@@ -19,7 +20,9 @@ const apiLimiter = rateLimiter({
 })
 
 router.route("/register").post(apiLimiter, register)
+router.route("/register").post(apiLimiter, register)
 router.route("/login").post(apiLimiter, login)
+router.route("/logout").get(logout)
 router.route("/updateUser").patch(auth, testUser, updateUser)
 router.route("/uploadProfile").post(auth, testUser, uploadProfileImage)
 

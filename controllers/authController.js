@@ -3,6 +3,7 @@ import { StatusCodes } from "http-status-codes"
 import { BadRequestError, UnauthenticatedError } from "../errors/index.js"
 import fs from "fs"
 import { v2 as cloudinary } from "cloudinary"
+import sendCookie from "../utils/sendCookie.js"
 
 // * === === === === === REGISTER USER === === === === === *
 const register = async (req, res) => {
@@ -18,14 +19,13 @@ const register = async (req, res) => {
   }
   const user = await User.create({ ...req.body })
   const token = user.createJWT()
+  sendCookie({ res, token })
   res.status(StatusCodes.CREATED).json({
     user: {
       name: user.name,
       lastName: user.lastName,
       email: user.email,
       location: user.location,
-      bio: user.bio,
-      token,
     },
   })
 }
@@ -45,19 +45,22 @@ const login = async (req, res) => {
     throw new UnauthenticatedError(`Invalid credentials`)
   }
   const token = user.createJWT()
+  sendCookie({ res, token })
   user.password = undefined
   res.status(StatusCodes.OK).json({
-    user: {
-      name: user.name,
-      lastName: user.lastName,
-      email: user.email,
-      location: user.location,
-      bio: user.bio,
-      image: user.image,
-      token,
-    },
+    user,
   })
 }
+
+// * === === === === === LOGOUT USER === === === === === *
+const logout = async (req, res) => {
+  res.cookie("token", "logout", {
+    httpOnly: true,
+    expires: new Date(Date.now() + 1000),
+  })
+  res.status(StatusCodes.OK).json({ msg: "Logout successful!" })
+}
+
 // * === === === === === UPDATE USER === === === === === *
 const updateUser = async (req, res) => {
   const { email, name, lastName, location, bio, image } = req.body
@@ -75,16 +78,9 @@ const updateUser = async (req, res) => {
 
   await user.save()
   const token = user.createJWT()
+  sendCookie({ res, token })
   res.status(StatusCodes.OK).json({
-    user: {
-      name: user.name,
-      lastName: user.lastName,
-      email: user.email,
-      location: user.location,
-      bio: user.bio,
-      image: user.image,
-      token,
-    },
+    user,
   })
 }
 
@@ -110,4 +106,4 @@ const uploadProfileImage = async (req, res) => {
   res.status(StatusCodes.OK).json({ image: { src: result.secure_url } })
 }
 
-export { register, login, updateUser, uploadProfileImage }
+export { register, login, logout, updateUser, uploadProfileImage }

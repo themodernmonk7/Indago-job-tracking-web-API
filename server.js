@@ -14,6 +14,8 @@ cloudinary.config({
 import helmet from "helmet"
 import xss from "xss-clean"
 import cors from "cors"
+import morgan from "morgan"
+import cookieParser from "cookie-parser"
 import mongoSanitize from "express-mongo-sanitize"
 import fileUpload from "express-fileupload"
 
@@ -26,10 +28,17 @@ import jobRouter from "./routes/jobRoutes.js"
 import errorHandlerMiddleware from "./middleware/error-handler.js"
 import notFoundMiddleware from "./middleware/not-found.js"
 
+app.use(morgan("tiny"))
 app.use(express.json())
+app.use(cookieParser(process.env.JWT_SECRET))
 app.set("trust proxy", 1)
 app.use(helmet())
-app.use(cors())
+app.use(
+  cors({
+    origin: "http://localhost:5173",
+    credentials: true, // Allow including credentials (e.g., cookies)
+  })
+)
 app.use(xss())
 app.use(mongoSanitize())
 app.use(fileUpload({ useTempFiles: true }))
