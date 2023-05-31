@@ -1,7 +1,7 @@
 import { UnauthenticatedError } from "../errors/index.js"
 import jwt from "jsonwebtoken"
 const auth = async (req, res, next) => {
-  const token = req.cookies.token
+  const token = req.signedCookies.token
   if (!token) {
     throw new UnauthenticatedError("Authentication Invalid")
   }
