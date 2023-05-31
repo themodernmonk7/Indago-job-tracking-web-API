@@ -36,7 +36,8 @@ app.use(helmet())
 app.use(
   cors({
     origin: ["http://localhost:5173", "https://indago-job.netlify.app"],
-    credentials: true, // Allow including credentials (e.g., cookies)
+    allowedHeaders: ["Content-Type", "Authorization", "x-csrf-token"],
+    credentials: true,
   })
 )
 app.use(xss())
